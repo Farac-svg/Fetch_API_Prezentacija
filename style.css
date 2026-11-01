@@ -77,15 +77,16 @@
   text-align: left;
 }
 
-.about-the-author .separator-left::before, .about-the-author .separator-left::after {
+.about-the-author .separator-left::before,
+.about-the-author .separator-left::after {
   display: table;
   content: ' ';
   -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
   -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .about-the-author .separator-left::after {
@@ -118,7 +119,8 @@
   color: #4c70ba;
 }
 
-.about-the-author .author-social .fa-stack.facebook:hover, .about-the-author .author-social .fa-stack.facebook:focus {
+.about-the-author .author-social .fa-stack.facebook:hover,
+.about-the-author .author-social .fa-stack.facebook:focus {
   color: #3b5998;
 }
 
@@ -126,7 +128,8 @@
   color: #83c3f3;
 }
 
-.about-the-author .author-social .fa-stack.twitter:hover, .about-the-author .author-social .fa-stack.twitter:focus {
+.about-the-author .author-social .fa-stack.twitter:hover,
+.about-the-author .author-social .fa-stack.twitter:focus {
   color: #55acee;
 }
 
@@ -134,7 +137,8 @@
   color: #009ee8;
 }
 
-.about-the-author .author-social .fa-stack.linkedin:hover, .about-the-author .author-social .fa-stack.linkedin:focus {
+.about-the-author .author-social .fa-stack.linkedin:hover,
+.about-the-author .author-social .fa-stack.linkedin:focus {
   color: #007bb5;
 }
 
@@ -142,3 +146,31 @@
   border: 1px solid #cacaca;
 }
 
+
+.social-footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
